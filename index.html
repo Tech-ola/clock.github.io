@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating a Clock</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+</head>
+<body class="body">
+<div class="container">
+<div class="row">
+<div class="col-ld-6 col-md-6 col-sm-12 col-xs-12">
+<section class="section">
+<div>
+<h2 class="heading">ANALOGUE CLOCK</h2>
+</div>
+<div class="text" id="menu">
+<b><i class="theText">What's the time??</i></b><br><br>
+		<!--show digital time-->
+		<button id="time" class="time"></button>
+</div>
+<b><span id="show_time"></span></b><br>
+<div>
+<!--Show Analog time -->
+<div class="clock">
+   <div class="hour">
+     <div class="hr" id="hr"></div>
+   </div><!-- <i class="fa fa-search"></i>
+    <i class="fa fa-user"></i>
+    <i class="fa fa-shopping-cart"></i>-->
+   <div class="min">
+     <div class="mn" id="mn"></div>
+   </div>
+   <div class="sec">
+     <div class="sc" id="sc"></div>
+   </div>
+ </div>
+</div>
+<br>
+<div>
+	
+	<hr style="border-top:1px dotted #ccc;"/>
+<h2 class="alarmsys"><b>ALARM SYSTEM</b></h2>
+		<center>
+			<input type="datetime-local" id="alarmTime"/>
+			<button type="button" onclick="setAlarm(this);" id="alarmButton" class="btn btn-success"><span class="glyphicon glyphicon-time"></span> Set Alarm</button>
+		</center>
+		<br />
+		<div id="selectButton" style="display:none;">
+			<center>
+				<button onclick="snoozeAlarm();" class="btn btn-warning"><span class="glyphicon glyphicon-pause"></span> Snooze 5 minutes</button>
+				<button onclick="stopAlarm();" class="btn btn-danger"><span class="glyphicon glyphicon-stop"></span> Stop Alarm</button>
+			</center>
+</div>
+</section>
+
+</div></div>
+
+
+</body>
+	<script type="text/javascript" src="new.js"></script>
+
+</html>
